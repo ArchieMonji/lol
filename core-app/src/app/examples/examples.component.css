@@ -1,0 +1,26 @@
+﻿.code {
+  background-color: #efefef;
+  padding: 1em;
+  border: 1px solid #ccc;
+}
+
+.result {
+  background-color: #efefef;
+  padding: 1em;
+  border:1px solid #ccc;
+}
+
+.header{
+  font-weight:bold;
+  font-size:1em;
+}
+
+.one-way {
+  background-color: #90EE90;
+  padding: 1em;
+}
+
+.section{
+  padding:1em;
+  border:1px solid #ccc;
+}

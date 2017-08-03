@@ -1,0 +1,40 @@
+﻿header {
+  background-color: #efefef;
+}
+
+.title-container {
+  padding: 1em 1em 1em 1em;
+  background-color: rgb(25, 118, 210);
+  color: white;
+}
+
+nav {
+  padding: 1em;
+}
+
+  nav a {
+    background: #ccc;
+    border-radius: 5px;
+    padding: 4px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    background: #333;
+    color: #ccc;
+  }
+
+  nav a.active {
+    color: #39f;
+    background: #333;
+  }
+
+h1 {
+  margin: 0;
+}
+
+.content{
+  padding:1em;
+}

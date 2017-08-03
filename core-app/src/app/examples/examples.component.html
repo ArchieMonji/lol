@@ -1,0 +1,73 @@
+﻿<h1>
+  Data Binding
+</h1>
+<div class="section">
+  <b>Interpolation</b>
+  <table>
+    <tr>
+      <td>
+        <b>Class</b>
+      </td>
+      <td>
+        <div class="code">
+          <code>testInterpolation: string = "Some text to be bound"</code>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Template</b>
+      </td>
+      <td>
+        <div class="code" ngNonBindable>
+          <code> {{testInterpolation}}</code>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Result</b>
+      </td>
+      <td>
+        <div class="result">
+          {{testInterpolation}}
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<br />
+
+<div class="section">
+  <b>One-Way Binding/Communication</b>
+  <div class="one-way">
+    Count: {{testOneWay}} - <button (click)="incrementOneWay()">Increment</button>
+    <br />
+    <br />
+    <app-one-way-binding-example [count]="testOneWay"></app-one-way-binding-example>
+  </div>
+</div>
+
+<br />
+
+<div class="section">
+  <b>Two-way Binding/Communication!</b>
+  <div class="one-way">
+    Count: {{testTwoWay}} -  <button (click)="incrementTwoWay()">Increment</button>
+    <br />
+    <br />
+    <div class="code">
+      <code>{{twoWayCode1}}</code>
+    </div>
+    <app-two-way-binding-example [(count)]='testTwoWay'></app-two-way-binding-example>
+    <br />
+    <div class="code">
+      <code>{{twoWayCode2}}</code>
+    </div>
+    <div class="code">
+      <code>{{twoWayCode3}}</code>
+    </div>
+    <app-two-way-binding-example [count]='testTwoWay' (countChange)='testTwoWay = $event'></app-two-way-binding-example>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+﻿<h2>Favorite Words</h2>
+<ul class="favorites">
+  <li *ngFor="let chain of favorites">
+    <span class="language">({{chain.firstLanguage | uppercase}} <=> {{chain.secondLanguage | uppercase}})</span>
+    <a [routerLink]="['/translation', chain.firstLanguage, chain.secondLanguage, chain.words[0]]">{{chain.words[0]}}</a>
+  </li>
+</ul>

@@ -1,0 +1,1 @@
+ng build -op ../wwwroot/ -w

@@ -1,0 +1,30 @@
+﻿<div class="container">
+  <h2 class="title">Let's translate some stuff!</h2>
+  <input type="text" [(ngModel)]="word" />
+  <br />
+  <br />
+  <select [(ngModel)]="firstLanguage">
+    <option value="en">english</option>
+    <option value="ja">japanese</option>
+    <option value="fr">french</option>
+    <option value="es">spanish</option>
+    <option value="zh-CN">chinese</option>
+    <option value="ko">korean</option>
+    <option value="it">italian</option>
+    <option value="la">latin</option>
+  </select>
+  to
+  <select [(ngModel)]="secondLanguage">
+    <option value="en">english</option>
+    <option value="ja">japanese</option>
+    <option value="fr">french</option>
+    <option value="es">spanish</option>
+    <option value="zh-CN">chinese</option>
+    <option value="ko">korean</option>
+    <option value="it">italian</option>
+    <option value="la">latin</option>
+  </select>
+  <br />
+  <br />
+  <input type="button" (click)="onClick();" value="Go!" />
+</div>

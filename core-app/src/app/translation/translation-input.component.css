@@ -1,0 +1,12 @@
+﻿.container {
+  text-align: center;
+  padding: 1em;
+}
+
+.title {
+  color: rgb(25, 118, 210);
+}
+
+input, select {
+  padding: 4px;
+}
